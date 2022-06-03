@@ -3,8 +3,6 @@
 installed:
   pkg.installed:
     - pkgs:
-      - mutt
-      - notmuch
       - libreoffice
       - gimp
       - evince
