@@ -1,5 +1,5 @@
-Name:           3isec-qubes-sys-vpn
-Version:       	1.0
+Name:           aw-qubes-sys-vpn-salt
+Version:       	1.1
 Release:        1%{?dist}
 Summary:        Salt a VPN proxy in Qubes
 
@@ -34,5 +34,7 @@ if [ $1 -eq 0 ]; then
 fi
 
 %changelog
+* Sat Jun 04 2022 alexwaibel <alexwaibel@users.noreply.github.com> - 1.1
+- Standardize package names with aw prefix
 * Wed May 18 2022 unman <unman@thirdeyesecurity.org> - 1.0
 - First Build

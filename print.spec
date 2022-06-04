@@ -1,5 +1,5 @@
-Name:           3isec-qubes-sys-printer
-Version:       	1.2
+Name:           aw-qubes-sys-printer-salt
+Version:       	1.3
 Release:        1%{?dist}
 Summary:        Salt a printer qube in Qubes
 
@@ -31,6 +31,8 @@ if [ $1 -eq 0 ]; then
 fi
 
 %changelog
+* Sat Jun 04 2022 alexwaibel <alexwaibel@users.noreply.github.com> - 1.3
+- Standardize package names with aw prefix
 * Sun May 22 2022 unman <unman@thirdeyesecurity.org> - 1.2
 - Add template and package installation to  post
 * Sat May 21 2022 unman <unman@thirdeyesecurity.org> - 1.1

@@ -1,5 +1,5 @@
-Name:           deb11-minimal-salt
-Version:  	1.0
+Name:           aw-deb11-minimal-salt
+Version:  	1.1
 Release:        1%{?dist}
 Summary:        Salt debian-11-minimal template in Qubes
 
@@ -25,5 +25,7 @@ fi
 
 
 %changelog
+* Sat Jun 04 2022 alexwaibel <alexwaibel@users.noreply.github.com> - 1.1
+- Standardize package names with aw prefix
 * Sat May 14 2022 unman <unman@thirdeyesecurity.org> - 1.0
 - First Build

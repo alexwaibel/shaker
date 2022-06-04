@@ -1,5 +1,5 @@
-Name:           3isec-qubes-cacher
-Version:       	1.4
+Name:          aw-qubes-cacher-salt
+Version:       	1.5
 Release:        1%{?dist}
 Summary:        Salt a caching proxy in Qubes
 
@@ -41,6 +41,8 @@ if [ $1 -eq 0 ]; then
 fi
 
 %changelog
+* Sat Jun 04 2022 alexwaibel <alexwaibel@users.noreply.github.com> - 1.5
+- Standardize package names with aw prefix
 * Sat May 21 2022 unman <unman@thirdeyesecurity.org> - 1.4
 - Standardise package names to 3isec-
 * Sun May 15 2022 unman <unman@thirdeyesecurity.org> - 1.3

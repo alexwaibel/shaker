@@ -1,5 +1,5 @@
-Name:           3isec-qubes-split-gpg
-Version:  	2.0
+Name:           aw-qubes-split-gpg-salt
+Version:  	2.1
 Release:        1%{?dist}
 Summary:        Salt split-gpg template in Qubes
 
@@ -31,7 +31,9 @@ fi
 
 
 %changelog
-* Sat May 21 2022 unman <unman@thirdeyesecurity.org> - 1.4
+* Sat Jun 04 2022 alexwaibel <alexwaibel@users.noreply.github.com> - 2.1
+- Standardize package names with aw prefix
+* Sat May 21 2022 unman <unman@thirdeyesecurity.org> - 2.0
 - Standardise package names to 3isec-
 * Sat May 14 2022 unman <unman@thirdeyesecurity.org> - 2.0
 - Change preun script

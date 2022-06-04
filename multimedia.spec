@@ -1,5 +1,5 @@
-Name:           3isec-qubes-sys-multimedia
-Version:  	2.1
+Name:           aw-qubes-sys-multimedia-salt
+Version:  	2.2
 Release:        1%{?dist}
 Summary:        Salt multimedia template and qubes
 
@@ -27,6 +27,8 @@ if [ $1 -eq 1 ]; then
 fi
 
 %changelog
+* Sat Jun 04 2022 alexwaibel <alexwaibel@users.noreply.github.com> - 2.2
+- Standardize package names with aw prefix
 * Sat May 21 2022 unman <unman@thirdeyesecurity.org> - 2.1
 - Standardise package names to 3isec-
 * Sun May 15 2022 unman <unman@thirdeyesecurity.org> - 2.0
