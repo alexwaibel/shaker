@@ -1,7 +1,7 @@
-all: setup cacher
+all: setup cacher debian-11-minimal debian-11 gpg multimedia openvpn print qubes-ssh-agent
 	echo "Making All"
 
-.PHONY: cacher
+.PHONY: cacher debian-11-minimal debian-11 gpg multimedia openvpn print qubes-ssh-agent
 
 setup:
 	sudo dnf install fedora-packager rpmdevtools gcc
@@ -13,3 +13,24 @@ setup:
 
 cacher:
 	rpmbuild -bb "${HOME}/rpmbuild/SPECS/cacher.spec"
+
+debian-11-minimal:
+	rpmbuild -bb "${HOME}/rpmbuild/SPECS/debian-11-minimal.spec"
+
+debian-11:
+	rpmbuild -bb "${HOME}/rpmbuild/SPECS/debian-11.spec"
+
+gpg:
+	rpmbuild -bb "${HOME}/rpmbuild/SPECS/gpg.spec"
+
+multimedia:
+	rpmbuild -bb "${HOME}/rpmbuild/SPECS/multimedia.spec"
+
+openvpn:
+	rpmbuild -bb "${HOME}/rpmbuild/SPECS/openvpn.spec"
+
+print:
+	rpmbuild -bb "${HOME}/rpmbuild/SPECS/print.spec"
+
+qubes-ssh-agent:
+	rpmbuild -bb "${HOME}/rpmbuild/SPECS/qubes-ssh-agent.spec"
