@@ -4,6 +4,7 @@ all: setup cacher debian-11-minimal debian-11 gpg multimedia openvpn print qubes
 .PHONY: cacher debian-11-minimal debian-11 gpg multimedia openvpn print qubes-ssh-agent
 
 setup:
+	rm -rf ./openvpn/.git ./qubes-ssh-agent/.git
 	sudo dnf install fedora-packager rpmdevtools gcc
 	rpmdev-setuptree
 	echo "Copying spec files"
