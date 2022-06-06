@@ -1,0 +1,6 @@
+[submodule "qubes-ssh-agent"]
+	path = qubes-ssh-agent
+	url = https://github.com/alexwaibel/qubes-ssh-agent
+[submodule "openvpn"]
+	path = openvpn
+	url = https://github.com/alexwaibel/openvpn
