@@ -24,24 +24,13 @@ These tools should be installed on the machine you'll be building the packages o
 |-----------------------------------------------------------|----------------------------------------------------------|
 | [rpmdevtools](https://fedoraproject.org/wiki/Rpmdevtools) | Contains many scripts to aid in RPM package development. |
 
-### Prerequisites
-
-- Create the file tree needed to build RPM packages
-
-  ```bash
-  rpmdev-setuptree
-  ```
+This setup is done automatically you when you run `make setup`
 
 ### Building packages
 
-1. Clone this repo and place the files in the appropriate `$HOME/rpmbuild` directories
-    - Copy or link the `.spec` files to `rpmbuild/SPECS`
-    - Copy or link the other directories to `rpmbuild/SOURCES`
-
-1. Build the RPM binaries for the packages you want to use
-    ```bash
-    rpmbuild -bb ~/rpmbuild/SPECS/cacher.spec
-    ```
+1. Build the rpm packages
+    - All packages can be built by running `make`
+    - Individual packages can be built by running commands such as `make cacher`
 
 1. Copy the rpm files from `rpmbuilder/RPMS` to your dom0 qube
     ```bash
